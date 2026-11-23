@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Google Cloud | CFO AI Masterclass – Handout Guides</title>
+<title>Google Cloud | AI Masterclass – Handout Guides</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
@@ -116,7 +116,7 @@ footer b{color:var(--ink)}
       <div class="event-chip">Hands-On Workshop Guide</div>
     </div>
     <p class="eyebrow">Google Cloud</p>
-    <h1>CFO AI Masterclass</h1>
+    <h1>AI Masterclass</h1>
     <p class="sub">Step-by-Step Handout Guides</p>
   </div>
 </header>
@@ -157,7 +157,7 @@ footer b{color:var(--ink)}
         <h3><small>Step 2</small>Create Notebook</h3>
         <ul>
           <li>Click <span class="ui">+ New Notebook</span>.</li>
-          <li>Enter a clear title for your project <span class="eg">(e.g., "FY26 Budget Variance Analysis")</span>.</li>
+          <li>Enter a clear title for your project <span class="eg">(e.g., "[Your Project] Variance &amp; Summary")</span>.</li>
         </ul>
       </li>
       <li class="step"><span class="num">3</span>
@@ -170,7 +170,7 @@ footer b{color:var(--ink)}
       <li class="step"><span class="num">4</span>
         <h3><small>Step 4</small>Ask Questions</h3>
         <ul>
-          <li>Type your question in the chat box at the bottom <span class="eg">(e.g., "What caused travel expenses to increase in Q2?")</span>.</li>
+          <li>Type your question in the chat box at the bottom <span class="eg">(e.g., "What caused the key variances or delays in the latest period?")</span>.</li>
           <li>View cited source excerpts.</li>
         </ul>
       </li>
@@ -215,15 +215,15 @@ footer b{color:var(--ink)}
       <li class="step"><span class="num">2</span>
         <h3><small>Step 2</small>Define Instructions</h3>
         <ul>
-          <li>In the setup pane, describe the agent's job in plain English:</li>
+          <li>In the setup pane, describe the agent's job in plain English (replace bracketed placeholders with your details):</li>
         </ul>
         <div class="prompt">
           <div class="prompt-head"><i></i>Agent instructions</div>
-<pre>You are the Executive Personal Assistant to the CFO.
+<pre>You are the Executive Personal Assistant to [YOUR ROLE / NAME, e.g., the Operations Lead / Project Manager / Team Lead].
 
-1. When asked about financial performance or reports, search Google Drive and present key metrics, Latest reports in structured tables and answer as per that only.
+1. When asked about [YOUR DOMAIN, e.g., project status, performance, or reports], search Google Drive and present key metrics and the latest reports in structured tables, answering strictly based on those sources.
 
-2. Use Google Chat, Google Drive and Gmail to look up stakeholder context and discussions.
+2. Use Google Chat, Google Drive, and Gmail to look up stakeholder context, updates, and discussions.
 
 3. Propose professional email drafts with clear To, Cc, Subject, and summary content.
 
@@ -233,7 +233,7 @@ footer b{color:var(--ink)}
       <li class="step"><span class="num">3</span>
         <h3><small>Step 3</small>Test in Preview</h3>
         <ul>
-          <li>In the right-side <span class="ui">Preview</span> sandbox, type sample questions <span class="eg">(e.g., "how was my last quater results")</span>.</li>
+          <li>In the right-side <span class="ui">Preview</span> sandbox, type sample questions <span class="eg">(e.g., "What are the latest updates and key metrics from my recent files?")</span>.</li>
           <li>Verify its reasoning and calculations.</li>
         </ul>
       </li>
@@ -285,11 +285,11 @@ footer b{color:var(--ink)}
       <li class="step"><span class="num">3</span>
         <h3><small>Step 3</small>Enter Recurring Task</h3>
         <ul>
-          <li>Type the exact prompt:</li>
+          <li>Type the recurring prompt (customize the bracketed fields for your workflow):</li>
         </ul>
         <div class="prompt">
           <div class="prompt-head"><i></i>Scheduled prompt</div>
-<pre>Pull bank cash balances from master sheet, compare with weekly forecast, and summarize net cash position.</pre>
+<pre>Pull the latest figures from [YOUR MASTER SHEET / TRACKER], compare with [YOUR TARGET / FORECAST / PLAN], and summarize [KEY STATUS / POSITION] along with any action items.</pre>
         </div>
         <ul>
           <li>Click <span class="ui">Update</span> to activate.</li>
@@ -320,45 +320,45 @@ footer b{color:var(--ink)}
       <li class="step"><span class="num">2</span>
         <h3><small>Step 2</small>Enter Research Question</h3>
         <ul>
-          <li>Type your research-related prompt:</li>
+          <li>Type your research-related prompt (customize the bracketed placeholders for your role, domain, and timeframe):</li>
         </ul>
         <div class="prompt">
           <div class="prompt-head"><i></i>Deep Research prompt</div>
-<pre>Act as a strategic advisor to a CFO preparing the FY2027 plan. As of November 2026, produce a deep-research report titled:
+<pre>Act as a strategic advisor to [YOUR ROLE / LEADER, e.g., a department head, product leader, or business executive] preparing the [PLANNING CYCLE, e.g., FY2027 plan]. As of [CURRENT DATE / MONTH YEAR, e.g., November 2026], produce a deep-research report titled:
 
-<span class="hl">"Agentic AI in Finance: Separating Real ROI from Hype — A CFO Playbook for FY2027"</span>
+<span class="hl">"Agentic AI in [YOUR DOMAIN / INDUSTRY]: Separating Real ROI from Hype — A Practical Playbook for [TIMEFRAME / YEAR]"</span>
 
 Research and cover:
 
-<span class="hl">1. CURRENT STATE (Nov 2026)</span>
-- Adoption rates of AI agents in finance (close, AP/AR, reconciliation, FP&amp;A, treasury, tax)
-- Latest CFO surveys on confidence, AI priorities, and budget shifts
+<span class="hl">1. CURRENT STATE</span>
+- Adoption rates of AI agents in [YOUR DOMAIN / KEY WORKFLOWS]
+- Latest industry surveys on leadership confidence, AI priorities, and budget shifts
 - Failure/cancellation rates of agentic AI pilots and the root causes
 
 <span class="hl">2. ROI EVIDENCE</span>
-- Quantified benchmarks: close-cycle reduction, cost per transaction, forecast accuracy, DSO/working capital impact
+- Quantified benchmarks relevant to [YOUR DOMAIN, e.g., cycle time, cost per task/transaction, accuracy, throughput, or efficiency]
 - Separate vendor-claimed vs. independently validated results
 - Full total cost of ownership: data infrastructure, agent execution/tool-call costs, human oversight, governance
 
 <span class="hl">3. MACRO &amp; RISK CONTEXT</span>
-- Interest rates, inflation, demand outlook, geopolitical and supply chain risk
-- Regulatory/tax pressure (e.g., Pillar Two, AI regulation, data sovereignty)
-- Cybersecurity and AI-governance risks specific to finance agents
+- Economic, market, demand, and supply/operational risks affecting [YOUR DOMAIN]
+- Regulatory, compliance, and data sovereignty pressures
+- Cybersecurity and AI-governance risks specific to autonomous agents
 
 <span class="hl">4. DECISION FRAMEWORK</span>
-- Which 3 finance workflows to automate first, and why (impact vs. risk vs. data readiness)
+- Which 3 workflows in [YOUR DOMAIN] to automate first, and why (impact vs. risk vs. data readiness)
 - Clear go/no-go criteria and ROI thresholds to scale a pilot
 - 90-day, 6-month, and 12-month roadmap
-- KPIs to report to the CEO and board
+- Key KPIs to report to executive leadership and stakeholders
 
 <span class="hl">5. TALENT &amp; OPERATING MODEL</span>
-- Skills the finance team needs, upskilling vs. hiring, and the junior "experience gap"
+- Skills the team needs, upskilling vs. hiring, and closing capability/experience gaps
 
 <span class="hl">OUTPUT FORMAT:</span>
 - 1-page executive summary with the 5 most important recommendations up front
 - Tables for benchmarks and the comparison of workflow priorities
 - A "Risks &amp; Mitigations" section
-- A board-ready slide outline (5 slides)
+- A leadership-ready slide outline (5 slides)
 - Cite every statistic with source and date; flag any data older than 12 months</pre>
         </div>
         <ul>
@@ -394,7 +394,7 @@ Research and cover:
 </main>
 
 <footer>
-  <div class="container"><b>Google Cloud</b> · CFO AI Masterclass</div>
+  <div class="container"><b>Google Cloud</b> · AI Masterclass</div>
 </footer>
 
 </body>
