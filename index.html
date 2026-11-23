@@ -3,15 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Deloitte &amp; Google Cloud | CFO AI Masterclass – Handout Guides</title>
+<title>Google Cloud | CFO AI Masterclass – Handout Guides</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 :root{
-  --black:#0b0d0e; --ink:#1b1f23; --muted:#5b6670; --bg:#f4f6f3; --surface:#fff; --border:#e2e6e1;
-  --dgreen:#86bc25; --dgreen-dark:#4f7a12; --dgreen-soft:#eef6e0;
-  --g-blue:#4285f4; --g-red:#ea4335; --g-yellow:#fbbc04; --g-green:#34a853;
-  --radius:14px; --shadow:0 1px 3px rgba(16,24,40,.07),0 8px 24px rgba(16,24,40,.05);
+  --ink:#202124; --muted:#5f6368; --bg:#f8f9fa; --surface:#ffffff; --border:#dadce0;
+  --g-blue:#1a73e8; --g-blue-bright:#4285f4; --g-blue-soft:#e8f0fe; --g-blue-dark:#174ea6;
+  --g-red:#ea4335; --g-yellow:#fbbc04; --g-green:#34a853;
+  --radius:14px; --shadow:0 1px 3px rgba(60,64,67,.12),0 6px 20px rgba(60,64,67,.06);
   --font:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
   --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
 }
@@ -21,34 +21,30 @@ body{margin:0;font-family:var(--font);color:var(--ink);background:var(--bg);line
 a{color:inherit}
 .container{max-width:1080px;margin:0 auto;padding:0 20px}
 
-/* Hero */
-.hero{background:var(--black);color:#fff;position:relative;overflow:hidden}
+/* Hero - Google Cloud Theme */
+.hero{background:#ffffff;color:var(--ink);position:relative;overflow:hidden;border-bottom:1px solid var(--border)}
 .hero::after{content:"";position:absolute;inset:auto 0 0 0;height:5px;
-  background:linear-gradient(90deg,var(--g-blue) 0 25%,var(--g-red) 25% 50%,var(--g-yellow) 50% 75%,var(--g-green) 75% 100%)}
-.hero::before{content:"";position:absolute;right:-120px;top:-120px;width:380px;height:380px;border-radius:50%;
-  background:radial-gradient(circle,rgba(134,188,37,.28),transparent 65%)}
+  background:linear-gradient(90deg,var(--g-blue-bright) 0 25%,var(--g-red) 25% 50%,var(--g-yellow) 50% 75%,var(--g-green) 75% 100%)}
+.hero::before{content:"";position:absolute;right:-100px;top:-100px;width:400px;height:400px;border-radius:50%;
+  background:radial-gradient(circle,rgba(66,133,244,.12),transparent 65%)}
 .hero-inner{position:relative;padding:40px 0 48px}
-.brand-row{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:28px}
-.deloitte{font-weight:800;font-size:24px;letter-spacing:-.5px}
-.deloitte span{color:var(--dgreen)}
-.x{color:#7b858d;font-weight:500}
-.gcloud{font-weight:600;font-size:20px;display:flex;align-items:center;gap:8px}
-.gdots{display:inline-flex;gap:3px}
-.gdots i{width:8px;height:8px;border-radius:50%;display:block}
+.brand-row{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:24px}
+.gcloud{font-weight:700;font-size:22px;display:flex;align-items:center;gap:10px;color:var(--ink);letter-spacing:-.3px}
+.gdots{display:inline-flex;gap:4px}
+.gdots i{width:9px;height:9px;border-radius:50%;display:block}
 .event-chip{margin-left:auto;font-size:12px;font-weight:600;letter-spacing:.4px;text-transform:uppercase;
-  border:1px solid rgba(255,255,255,.22);padding:6px 12px;border-radius:999px;color:#d6dbd1}
-.event-chip b{color:var(--dgreen)}
-.eyebrow{color:var(--dgreen);font-weight:700;font-size:13px;letter-spacing:1.6px;text-transform:uppercase;margin:0 0 8px}
-.hero h1{font-size:clamp(28px,5vw,44px);line-height:1.12;margin:0 0 12px;letter-spacing:-.8px}
-.hero p.sub{margin:0;color:#c3c9c0;font-size:17px}
+  border:1px solid var(--border);background:var(--g-blue-soft);padding:6px 14px;border-radius:999px;color:var(--g-blue-dark)}
+.eyebrow{color:var(--g-blue);font-weight:700;font-size:13px;letter-spacing:1.6px;text-transform:uppercase;margin:0 0 8px}
+.hero h1{font-size:clamp(28px,5vw,44px);line-height:1.12;margin:0 0 12px;letter-spacing:-.8px;color:var(--ink)}
+.hero p.sub{margin:0;color:var(--muted);font-size:17px}
 
 /* Nav */
-.nav{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--border)}
+.nav{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--border)}
 .nav ul{list-style:none;margin:0;padding:10px 0;display:flex;gap:8px;overflow-x:auto}
 .nav a{display:flex;align-items:center;gap:8px;white-space:nowrap;text-decoration:none;font-size:13px;font-weight:600;
   padding:8px 14px;border-radius:999px;border:1px solid var(--border);background:#fff;color:var(--ink);transition:.15s}
-.nav a:hover{border-color:var(--dgreen);background:var(--dgreen-soft)}
-.nav a:focus-visible{outline:2px solid var(--dgreen);outline-offset:2px}
+.nav a:hover{border-color:var(--g-blue-bright);background:var(--g-blue-soft);color:var(--g-blue-dark)}
+.nav a:focus-visible{outline:2px solid var(--g-blue);outline-offset:2px}
 .nav .dot{width:8px;height:8px;border-radius:50%}
 
 main{padding:32px 0 56px}
@@ -68,38 +64,37 @@ main{padding:32px 0 56px}
 .step::before{content:"";position:absolute;left:19px;top:40px;bottom:0;width:2px;background:var(--border)}
 .step:last-child::before{display:none}
 .num{position:absolute;left:0;top:0;width:40px;height:40px;border-radius:50%;display:grid;place-items:center;
-  font-weight:800;font-size:15px;background:var(--black);color:#fff;box-shadow:0 0 0 4px var(--accent-soft)}
+  font-weight:800;font-size:15px;background:var(--g-blue);color:#fff;box-shadow:0 0 0 4px var(--accent-soft)}
 .step h3{margin:6px 0 10px;font-size:17px}
 .step h3 small{display:block;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--accent-ink);margin-bottom:2px}
 .step ul{margin:0;padding-left:18px}
 .step li{margin:6px 0}
-.step li::marker{color:var(--dgreen)}
+.step li::marker{color:var(--g-blue)}
 .step ul ul{margin-top:6px}
 .step ul ul li::marker{color:var(--muted)}
-.ui{display:inline-block;font-weight:600;background:#f1f3f0;border:1px solid var(--border);border-radius:6px;padding:0 7px;font-size:.92em;white-space:nowrap}
-.link{color:var(--dgreen-dark);font-weight:600;text-decoration:underline;text-underline-offset:2px}
-.link:hover{color:var(--black)}
+.ui{display:inline-block;font-weight:600;background:#f1f3f4;border:1px solid var(--border);border-radius:6px;padding:0 7px;font-size:.92em;white-space:nowrap;color:var(--ink)}
+.link{color:var(--g-blue);font-weight:600;text-decoration:underline;text-underline-offset:2px}
+.link:hover{color:var(--g-blue-dark)}
 .eg{color:var(--muted)}
 
 /* Prompt box */
-.prompt{margin:12px 0 4px;border-radius:12px;background:var(--black);color:#e8ece5;overflow:hidden;border:1px solid #20262b}
-.prompt-head{display:flex;align-items:center;gap:8px;padding:8px 14px;background:#151a1e;font-size:11px;font-weight:700;
-  letter-spacing:1px;text-transform:uppercase;color:#9aa49a;border-bottom:1px solid #232a30}
-.prompt-head i{width:8px;height:8px;border-radius:50%;background:var(--dgreen)}
+.prompt{margin:12px 0 4px;border-radius:12px;background:#1e2329;color:#e8eaed;overflow:hidden;border:1px solid #3c4043}
+.prompt-head{display:flex;align-items:center;gap:8px;padding:8px 14px;background:#282d34;font-size:11px;font-weight:700;
+  letter-spacing:1px;text-transform:uppercase;color:#9aa0a6;border-bottom:1px solid #3c4043}
+.prompt-head i{width:8px;height:8px;border-radius:50%;background:var(--g-blue-bright)}
 .prompt pre{margin:0;padding:16px 18px;font-family:var(--mono);font-size:13px;line-height:1.65;white-space:pre-wrap;word-break:break-word}
-.prompt pre .hl{color:var(--dgreen);font-weight:500}
+.prompt pre .hl{color:#8ab4f8;font-weight:500}
 .tabs-demo{display:inline-flex;gap:6px;margin-top:6px;flex-wrap:wrap}
 .tabs-demo span{font-size:12px;font-weight:600;padding:3px 10px;border-radius:999px;border:1px solid var(--border);background:#fff}
 
 /* Accents */
-.h1{--accent:var(--g-blue);--accent-soft:#e8f0fe;--accent-ink:#1a5fd0}
-.h2{--accent:var(--g-green);--accent-soft:#e6f4ea;--accent-ink:#1e7e3a}
-.h3{--accent:var(--g-yellow);--accent-soft:#fef7e0;--accent-ink:#9a6b00}
-.h4{--accent:var(--g-red);--accent-soft:#fce8e6;--accent-ink:#c5221f}
+.h1{--accent:var(--g-blue-bright);--accent-soft:#e8f0fe;--accent-ink:#1a73e8}
+.h2{--accent:var(--g-green);--accent-soft:#e6f4ea;--accent-ink:#1e8e3e}
+.h3{--accent:var(--g-yellow);--accent-soft:#fef7e0;--accent-ink:#b06000}
+.h4{--accent:var(--g-red);--accent-soft:#fce8e6;--accent-ink:#d93025}
 
-footer{background:var(--black);color:#9aa39a;font-size:13px;padding:24px 0;text-align:center}
-footer b{color:#fff}
-footer span{color:var(--dgreen)}
+footer{background:#ffffff;border-top:1px solid var(--border);color:var(--muted);font-size:13px;padding:24px 0;text-align:center}
+footer b{color:var(--ink)}
 
 @media (max-width:640px){
   .h-head{padding:22px 18px 16px}
@@ -117,12 +112,10 @@ footer span{color:var(--dgreen)}
 <header class="hero">
   <div class="container hero-inner">
     <div class="brand-row">
-      <div class="deloitte">Deloitte<span>.</span></div>
-      <div class="x">&amp;</div>
-      <div class="gcloud"><span class="gdots"><i style="background:var(--g-blue)"></i><i style="background:var(--g-red)"></i><i style="background:var(--g-yellow)"></i><i style="background:var(--g-green)"></i></span>Google Cloud</div>
-      <div class="event-chip"><b>Deloitte Colace 2026</b> · Taj Cidade de Goa Horizon, Goa</div>
+      <div class="gcloud"><span class="gdots"><i style="background:var(--g-blue-bright)"></i><i style="background:var(--g-red)"></i><i style="background:var(--g-yellow)"></i><i style="background:var(--g-green)"></i></span>Google Cloud</div>
+      <div class="event-chip">Hands-On Workshop Guide</div>
     </div>
-    <p class="eyebrow">Deloitte &amp; Google Cloud</p>
+    <p class="eyebrow">Google Cloud</p>
     <h1>CFO AI Masterclass</h1>
     <p class="sub">Step-by-Step Handout Guides</p>
   </div>
@@ -131,7 +124,7 @@ footer span{color:var(--dgreen)}
 <nav class="nav" aria-label="Handouts">
   <div class="container">
     <ul>
-      <li><a href="#h1"><span class="dot" style="background:var(--g-blue)"></span>1 · NotebookLM</a></li>
+      <li><a href="#h1"><span class="dot" style="background:var(--g-blue-bright)"></span>1 · NotebookLM</a></li>
       <li><a href="#h2"><span class="dot" style="background:var(--g-green)"></span>2 · No-Code Agents</a></li>
       <li><a href="#h3"><span class="dot" style="background:var(--g-yellow)"></span>3 · Agent Scheduler</a></li>
       <li><a href="#h4"><span class="dot" style="background:var(--g-red)"></span>4 · Deep Research</a></li>
@@ -338,28 +331,28 @@ footer span{color:var(--dgreen)}
 Research and cover:
 
 <span class="hl">1. CURRENT STATE (Nov 2026)</span>
-   - Adoption rates of AI agents in finance (close, AP/AR, reconciliation, FP&amp;A, treasury, tax)
-   - Latest CFO surveys on confidence, AI priorities, and budget shifts
-   - Failure/cancellation rates of agentic AI pilots and the root causes
+- Adoption rates of AI agents in finance (close, AP/AR, reconciliation, FP&amp;A, treasury, tax)
+- Latest CFO surveys on confidence, AI priorities, and budget shifts
+- Failure/cancellation rates of agentic AI pilots and the root causes
 
 <span class="hl">2. ROI EVIDENCE</span>
-   - Quantified benchmarks: close-cycle reduction, cost per transaction, forecast accuracy, DSO/working capital impact
-   - Separate vendor-claimed vs. independently validated results
-   - Full total cost of ownership: data infrastructure, agent execution/tool-call costs, human oversight, governance
+- Quantified benchmarks: close-cycle reduction, cost per transaction, forecast accuracy, DSO/working capital impact
+- Separate vendor-claimed vs. independently validated results
+- Full total cost of ownership: data infrastructure, agent execution/tool-call costs, human oversight, governance
 
 <span class="hl">3. MACRO &amp; RISK CONTEXT</span>
-   - Interest rates, inflation, demand outlook, geopolitical and supply chain risk
-   - Regulatory/tax pressure (e.g., Pillar Two, AI regulation, data sovereignty)
-   - Cybersecurity and AI-governance risks specific to finance agents
+- Interest rates, inflation, demand outlook, geopolitical and supply chain risk
+- Regulatory/tax pressure (e.g., Pillar Two, AI regulation, data sovereignty)
+- Cybersecurity and AI-governance risks specific to finance agents
 
 <span class="hl">4. DECISION FRAMEWORK</span>
-   - Which 3 finance workflows to automate first, and why (impact vs. risk vs. data readiness)
-   - Clear go/no-go criteria and ROI thresholds to scale a pilot
-   - 90-day, 6-month, and 12-month roadmap
-   - KPIs to report to the CEO and board
+- Which 3 finance workflows to automate first, and why (impact vs. risk vs. data readiness)
+- Clear go/no-go criteria and ROI thresholds to scale a pilot
+- 90-day, 6-month, and 12-month roadmap
+- KPIs to report to the CEO and board
 
 <span class="hl">5. TALENT &amp; OPERATING MODEL</span>
-   - Skills the finance team needs, upskilling vs. hiring, and the junior "experience gap"
+- Skills the finance team needs, upskilling vs. hiring, and the junior "experience gap"
 
 <span class="hl">OUTPUT FORMAT:</span>
 - 1-page executive summary with the 5 most important recommendations up front
@@ -401,7 +394,7 @@ Research and cover:
 </main>
 
 <footer>
-  <div class="container"><b>Deloitte<span>.</span> &amp; Google Cloud</b> · CFO AI Masterclass · Deloitte Colace 2026 · Taj Cidade de Goa Horizon, Goa</div>
+  <div class="container"><b>Google Cloud</b> · CFO AI Masterclass</div>
 </footer>
 
 </body>
